@@ -1,0 +1,143 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+}
+
+.register-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+.register-card h1 {
+  text-align: center;
+  color: #1a1f36;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  background: #f8fafc;
+  padding: 0.875rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-color: #2196F3;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.input-group svg {
+  color: #64748b;
+}
+
+.input-group input,
+.input-group select {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #1e293b;
+  outline: none;
+  width: 100%;
+}
+
+.input-group input::placeholder,
+.input-group select {
+  color: #94a3b8;
+}
+
+.input-group select {
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.input-group select option {
+  background: white;
+  color: #1e293b;
+  padding: 0.5rem;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.register-btn:hover {
+  background: #1976D2;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
+}
+
+.register-btn:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  color: #dc2626;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background: #fef2f2;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 2rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.login-link span {
+  color: #2196F3;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+
+.login-link span:hover {
+  text-decoration: underline;
+}
+
+.success-message {
+  color: #059669;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background: #f0fdf4;
+  border-radius: 8px;
+  font-size: 0.875rem;
+} 

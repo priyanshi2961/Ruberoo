@@ -1,0 +1,389 @@
+  .home-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .ride-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .ride-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ride-form button:hover {
+    background-color: #0056b3;
+  }
+
+/* PageStyles.css */
+
+/* PageStyles.css */
+
+/* PageStyles.css */
+
+/* Full-Screen Gradient Inspired by Apple */
+/* PageStyles.css */
+
+/* Full-Screen Gradient Inspired by Apple */
+.page,
+.auth-page,
+.dashboard,
+.my-rides,
+.book-ride,
+.about,
+.profile-section {
+  background: linear-gradient(to bottom, #74ebd5, #9face6, #f3e7e9, #ffffff);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.brand {
+  color: #1e88e5;
+  font-weight: bold;
+  font-size: 3.0rem;
+}
+
+/* Hero Heading */
+.page h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.page p {
+  font-size: 1.25rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+/* Feature Card List Vertical Apple Style */
+.feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #111;
+}
+
+.feature-card p {
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Auth Forms */
+.auth-form,
+.ride-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  backdrop-filter: blur(8px);
+}
+
+.auth-form input,
+.ride-form input {
+  display: block;
+  margin: 12px auto;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.auth-form button,
+.ride-form button {
+  padding: 14px 28px;
+  background: linear-gradient(to right, #2196f3, #42a5f5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+  margin-top: 24px;
+}
+
+.auth-form button:hover,
+.ride-form button:hover {
+  background: linear-gradient(to right, #42a5f5, #2196f3);
+}
+
+/* Dashboard Cards */
+.dashboard-container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.dashboard-stats .card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.dashboard-stats .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-stats .card h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.dashboard-stats .card p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* Header Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+nav .brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #42a5f5;
+}
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.about-header .tagline {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.about-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+}
+
+.about-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.section-icon {
+  color: #3498db;
+}
+
+.about-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.about-footer h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.about-footer p {
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+}
+
+.contributors-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.contributors-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contributor-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contributor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contributor-card h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contributors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .contributor-card {
+    padding: 1.5rem;
+  }
+}
